@@ -1,0 +1,224 @@
+@keyframes float{
+0%{ transform: translateY(0px);}
+50%{transform: translateY(-5px);}
+100%{transform: translateY(0px);}
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+body{
+	font-family: Arial;
+	background-color: #121212;
+}
+.cart{
+	width: 40px;
+	cursor: pointer;
+}
+
+.box{
+	width: 50%;
+	padding: 5px;
+	position: absolute;
+	left: 25%;
+	top: 20%;
+	text-align: center;
+	border-radius: 30px;
+	color: white;
+	animation: float 5s ease-in-out infinite;
+}
+.box img{cursor: pointer;}
+.box img:active{transform:scale(0.97);}
+
+#clickcount{
+	width: 50%;
+	padding: 5px;
+	position: absolute;
+	left: 25%;
+	text-align: center;
+	color: white;
+	bottom: 5%;
+	cursor: default;
+}
+
+#buttons{
+	position: absolute;
+	left: 0;
+	text-align: center;
+	bottom: 0;
+	cursor: default;
+}
+#buttons button{
+	cursor: pointer;
+}
+#save{
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+    rgba(0, 0, 0, .2),
+    rgba(0, 0, 0, .2) 30%,
+    rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
+	margin: 4px;
+}
+
+#save:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+#save:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+    inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+#load{
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+    rgba(0, 0, 0, .2),
+    rgba(0, 0, 0, .2) 30%,
+    rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
+	margin: 4px;
+}
+
+#load:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+#load:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+
+}
+
+#reset{
+    border: 0;
+    line-height: 2.5;
+	right: 0;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+    rgba(0, 0, 0, .2),
+    rgba(0, 0, 0, .2) 30%,
+    rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
+	margin: 4px;
+}
+
+#reset:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+#reset:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
+.compras{
+	background-color: gray;
+	width: 250px;
+	height: 65%;
+	left: -350px;
+	position: absolute;
+	transition: all .5s;
+	border-radius: 30px
+}
+
+input[type="checkbox"]:checked ~ .compras
+{
+	transform: translateX(350px);
+}
+
+input[type="checkbox"]:checked ~ label
+{
+	background-color: black;
+	transition: 0.5s;
+	border-radius: 10px;
+}
+
+.compras ul{
+	top: 55px;
+	position: absolute;
+	width: 100%;
+	list-style: none;
+	
+}
+
+.compras li{
+	display: block;
+	padding: 20px; /*posso colocar padding no 2px +/- para conseguir colocar mais opções de compras*/
+	cursor: pointer;
+	
+}
+
+.compras li:hover{
+	background-color: black;
+	border-radius: 30px;
+	transition: 0.5s;
+	color: white;
+}
+
+label{
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+}
+
+li{
+	display: block;
+	padding: 20px;
+}
+
+.info{
+	background-color: gray;
+	width: 250px;
+	height: 500px;
+	right: 0;
+	position: absolute;
+	border-radius: 45px; 
+	cursor: default;
+}
+.info img{cursor: pointer;}
+.info span{
+	font-size: 32px;
+}
+
+#clicksec{
+	width: 50%;
+	padding: 5px;
+	position: absolute;
+	left: 25%;
+	text-align: center;
+	color: white;
+	bottom: 3%;
+}
